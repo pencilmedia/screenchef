@@ -16,9 +16,10 @@
     "serve-favicon": "~2.3.0"
   },
   "devDependencies": {
+    "bourbon": "^4.2.7",
     "grunt": "~0.4.0",
-    "grunt-sass": "^1.1.0",
     "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.1.0",
     "load-grunt-tasks": "^3.3.0",
     "reload": "^0.5.0"
   }

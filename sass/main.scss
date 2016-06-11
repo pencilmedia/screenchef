@@ -1,6 +1,7 @@
 /* BEGIN: theme.scss
 // -----------------------------------------------------*/
-// Bootstrap Overrides
+// Bourbon Library
+@import "node_modules/bourbon/app/assets/stylesheets/_bourbon";
 
 // Global Includes
 @import "variables";

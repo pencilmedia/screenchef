@@ -1,6 +1,12 @@
 /* BEGIN: typography.scss
 // -----------------------------------------------------*/
 
+body {
+  font-family: $baseFontFamily;
+  font-size: $baseFontSize;
+  -webkit-text-size-adjust: 200%;
+  color: #444;
+}
 
 /* HEADER TITLES
 // -----------------------------------------------------*/

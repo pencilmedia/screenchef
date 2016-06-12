@@ -4,8 +4,8 @@
 body {
   font-family: $baseFontFamily;
   font-size: $baseFontSize;
-  -webkit-text-size-adjust: 200%;
-  color: #444;
+  // -webkit-text-size-adjust: 200%;
+  color: $charcoal;
 }
 
 /* HEADER TITLES
@@ -14,40 +14,27 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $titleFont;
 	margin-top: $pageMargin;
 	letter-spacing: .07rem;
-	&.w-edit {
-		position: relative;
-		.btn-icon {
-			position: absolute;
-			right: 0;
-			top: 0;
-		}
-	}
+	margin: 0;
+	padding: 0;
 }
 h1 {
-	font-size: 22px;
-	font-weight: 400;
+  font-size: 225%;
 }
 h2 {
-	font-size: 20px;
+  font-size: 175%;
 }
 h3 {
-	font-size: 18px;
+  font-size: 150%;
 }
 h4 {
-	font-size: 16px;
+  font-size: 125%;
 }
 h5 {
-	font-size: 14px;
+  font-size: 100%;
 }
 h6 {
-	font-size: 13px; // underlined
-	padding-bottom: 3px;
-	border-bottom: 1px solid $borderColor;
+  font-size: 85%;
 }
-h5, h6 {
-	text-transform: uppercase;
-}
-
 
 /* TYPOGRAPHY 
 // -----------------------------------------------------*/

@@ -1,6 +1,12 @@
 @charset "UTF-8";
 /* BEGIN: theme.scss
 // -----------------------------------------------------*/
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 /* BEGIN: variables.scss - for theme.scss
 // -----------------------------------------------------*/
 /* BEGIN: Include Mixins
@@ -45,10 +51,21 @@ main {
           background: #f2f2f2;
           border: 1px solid #fff;
           box-shadow: 0 0 15px #d9d9d9;
+          color: #333;
           outline: 1px solid #d9d9d9;
           overflow: auto;
           padding: 1.6em 30px;
           position: relative; }
+          main section article .colonnade.cards .lt-column:hover, main section article .colonnade.cards .mid-column:hover, main section article .colonnade.cards .rt-column:hover {
+            -moz-transition: all 0.5s ease;
+            -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            -webkit-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            background: #e6e6e6;
+            box-shadow: 0 0 25px #a6a6a6;
+            color: #000;
+            text-decoration: none; }
           main section article .colonnade.cards .lt-column h1, main section article .colonnade.cards .mid-column h1, main section article .colonnade.cards .rt-column h1 {
             font-family: "GothamProLight";
             margin-top: 10px; }
@@ -91,51 +108,91 @@ main {
               border-radius: 100%; }
         main section article.callout dl:last-child {
           margin-bottom: 0; }
+    main section article.card-container {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto; }
+      main section article.card-container::after {
+        clear: both;
+        content: "";
+        display: table; }
+      main section article.card-container .logo-client {
+        margin-bottom: 1.6em;
+        max-width: 250px; }
+      main section article.card-container .card-item {
+        -moz-transition: all 0.5s ease;
+        -ms-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        background: #f2f2f2;
+        border: 1px solid #fff;
+        box-shadow: 0 0 15px #d9d9d9;
+        display: block;
+        margin-bottom: 1.6em;
+        outline: 1px solid #d9d9d9;
+        overflow: auto; }
+        main section article.card-container .card-item:hover {
+          background: #e6e6e6;
+          box-shadow: 0 0 25px #a6a6a6;
+          color: #000;
+          text-decoration: none; }
+        main section article.card-container .card-item .card-img {
+          float: left;
+          display: block;
+          margin-right: 2.3576515979%;
+          width: 31.7615656014%; }
+          main section article.card-container .card-item .card-img:last-child {
+            margin-right: 0; }
+          main section article.card-container .card-item .card-img img {
+            margin: 15px 0 0 10px;
+            max-width: 200px; }
+        main section article.card-container .card-item .card-content {
+          float: left;
+          display: block;
+          margin-right: 2.3576515979%;
+          width: 65.8807828007%;
+          padding: 15px 20px 15px 0; }
+          main section article.card-container .card-item .card-content:last-child {
+            margin-right: 0; }
+          main section article.card-container .card-item .card-content > p {
+            color: #595959; }
+            main section article.card-container .card-item .card-content > p:last-child {
+              margin-bottom: 0; }
 
 /* BEGIN: typography.scss
 // -----------------------------------------------------*/
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  -webkit-text-size-adjust: 200%;
-  color: #444; }
+  color: #333; }
 
 /* HEADER TITLES
 // -----------------------------------------------------*/
 h1, h2, h3, h4, h5, h6 {
   font-family: "GothamPro";
   margin-top: 1.6em;
-  letter-spacing: .07rem; }
-  h1.w-edit, h2.w-edit, h3.w-edit, h4.w-edit, h5.w-edit, h6.w-edit {
-    position: relative; }
-    h1.w-edit .btn-icon, h2.w-edit .btn-icon, h3.w-edit .btn-icon, h4.w-edit .btn-icon, h5.w-edit .btn-icon, h6.w-edit .btn-icon {
-      position: absolute;
-      right: 0;
-      top: 0; }
+  letter-spacing: .07rem;
+  margin: 0;
+  padding: 0; }
 
 h1 {
-  font-size: 22px;
-  font-weight: 400; }
+  font-size: 225%; }
 
 h2 {
-  font-size: 20px; }
+  font-size: 175%; }
 
 h3 {
-  font-size: 18px; }
+  font-size: 150%; }
 
 h4 {
-  font-size: 16px; }
+  font-size: 125%; }
 
 h5 {
-  font-size: 14px; }
+  font-size: 100%; }
 
 h6 {
-  font-size: 13px;
-  padding-bottom: 3px;
-  border-bottom: 1px solid #666666; }
-
-h5, h6 {
-  text-transform: uppercase; }
+  font-size: 85%; }
 
 /* TYPOGRAPHY 
 // -----------------------------------------------------*/
@@ -230,35 +287,6 @@ a {
   a:hover {
     color: #986FB1;
     text-decoration: underline; }
-
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  padding: 0; }
-
-h1 {
-  font-size: 200%; }
-
-h2 {
-  font-size: 175%; }
-
-h3 {
-  font-size: 150%; }
-
-h4 {
-  font-size: 125%; }
-
-h5 {
-  font-size: 100%; }
-
-h6 {
-  font-size: 85%; }
-
-section article h1 {
-  font-size: 150%;
-  margin-bottom: .75em; }
-
-section article h2 {
-  font-size: 125%; }
 
 /* Buttons ************* */
 .button {
@@ -362,7 +390,7 @@ header {
     -moz-box-shadow: none;
     -ms-box-shadow: none;
     box-shadow: none;
-    color: #443322;
+    color: #432;
     text-decoration: none; }
     .btn.btn-link .fa {
       margin-right: 5px;
@@ -397,7 +425,7 @@ header {
     opacity: 0.7;
     text-shadow: none; }
   .btn.btn-default {
-    color: #443322;
+    color: #432;
     background: #EEE;
     /* Old browsers */
     /* IE9 SVG, needs conditional override of 'filter' to 'none' */
@@ -484,7 +512,7 @@ header {
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=0 );
       /* IE6-8 */ }
   .btn.btn-info {
-    background-color: #443322;
+    background-color: #432;
     border-color: #110d09; }
     .btn.btn-info:hover, .btn.btn-info:active, .btn.btn-info.active {
       background-color: #221a11;
@@ -582,4 +610,6 @@ footer {
   /* Begin Navigation */
   header hgroup h2 + p {
     margin-bottom: 0; }
-  /* Begin Layout */ }
+  /* Begin Layout */
+  main {
+    min-width: 480px; } }

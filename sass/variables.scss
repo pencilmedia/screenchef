@@ -1,109 +1,16 @@
 /* BEGIN: variables.scss - for theme.scss
 // -----------------------------------------------------*/
 
-// Base Colors
-// -----------------------------------------------------
-
-
-// Primary Color Palette
-// -----------------------------------------------------
-
-$yellow:				#FECC70;
-$yellowLight:			lighten($yellow, 15%);
-
-
-$brown:				#443322;
-$brownLight:			lighten($brown, 15%);
-
-$white:				#fff;
-$black:				#000;
-$dark:				#343838;
-$green:				#628637;
-$orange:				#EA4727;
-$red:				#D0021B;
-$burgundy: 			#C14E4E;
-
-// Grays
-$gray:               	#ccc;
-$grayLight:          	lighten($gray, 18%);
-$grayLighter:        	lighten($gray, 26%);
-$grayLightest:       	lighten($gray, 34%);
-$grayDark:           	darken($gray, 20%);
-$grayDarker:         	darken($gray, 30%);
-$grayDarkest:        	darken($gray, 40%);
-
-
-// Typography
-// -----------------------------------------------------
-
-$baseFontSize:          14px;
-$baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-$baseLineHeight:        28px;
-$fontFamilyLight:	    "Helvetica Neue Light", Helvetica, Arial, sans-serif;
-
-// Custom Web Fonts
-$titleFont:  "GothamPro";
-$titleFontBold:  "GothamProBold";
-$titleFontLight:  "GothamProLight";
-
-//** Background color for `<body>`.
-$bodyBG:               $white;
-//** Global text color on `<body>`.
-$textColor:            $grayDarkest;
-
-//** Global textual link color.
-$linkColor:            $brown;
-//** Link hover color set via `darken()` function.
-$linkHoverColor:      darken($linkColor, 15%);
-//** Link hover decoration.
-$linkHoverDecoration: underline;
-
-
-// Forms
-// -----------------------------------------------------
-$placeholderText: 					#a9a9a9;
-$input-height-base: 34px;
-
-
-// Common
-// -----------------------------------------------------
-$pageMargin: 				20px;
-$borderColor: $grayDarkest;
-
-
-// Layout
-// -----------------------------------------------------
-$navbarHeight: 			45px;
-
-
-// Media queries breakpoints
-// -----------------------------------------------------
-
-// Extra small screen / phone
-$screen-xs-min:              480px;
-
-// Small screen / tablet
-$screen-sm-min:              768px;
-
-// Medium screen / desktop
-$screen-md-min:              992px;
-
-// Large screen / wide desktop
-$screen-lg-min:              1200px;
-
-
-
-// Variables
-// ================================================== //
-
 // Colors
 // -------------------------------------------------- //
 
-$black: #000;
-$white: #fff;
-$blue: #0080FF;
-$blueBright: #37f;
-$red: #900;
+$black: 				#000;
+$charcoal: 			#333;
+$white: 				#fff;
+$blue: 				#0080FF;
+$blueBright: 			#37f;
+$red: 				#900;
+$brown:				#432;
 
 $gray: #ccc;
 $grayLight: lighten($gray, 5%);
@@ -153,11 +60,66 @@ $purple:                #986FB1;
 $bodyBackground:        #f9f9f9;
 
 
+// Typography
+// -----------------------------------------------------
+
+$baseFontSize:          14px;
+$baseFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$baseLineHeight:        28px;
+$fontFamilyLight:	    "Helvetica Neue Light", Helvetica, Arial, sans-serif;
+
+// Custom Web Fonts
+$titleFont:  "GothamPro";
+$titleFontBold:  "GothamProBold";
+$titleFontLight:  "GothamProLight";
+
+//** Background color for `<body>`.
+$bodyBG:               $white;
+//** Global text color on `<body>`.
+$textColor:            $charcoal;
+
+//** Global textual link color.
+$linkColor:            $brown;
+//** Link hover color set via `darken()` function.
+$linkHoverColor:      darken($linkColor, 15%);
+//** Link hover decoration.
+$linkHoverDecoration: underline;
+
+
+// Forms
+// -----------------------------------------------------
+$placeholderText: 					#a9a9a9;
+$input-height-base: 34px;
+
+
+// Common
+// -----------------------------------------------------
+$pageMargin: 				20px;
+$borderColor: $grayDarkest;
+
+
+// Layout
+// -----------------------------------------------------
+$navbarHeight: 			45px;
+
+
 // Margins & Padding
 // -------------------------------------------------- //
-
 $pageMargin: 1.6em;
 
 
 
+// Media queries breakpoints
+// -----------------------------------------------------
 
+// Extra small screen / phone
+$screen-xs-min:              480px;
+
+// Small screen / tablet
+$screen-sm-min:              768px;
+
+// Medium screen / desktop
+$screen-md-min:              992px;
+
+// Large screen / wide desktop
+$screen-lg-min:              1200px;

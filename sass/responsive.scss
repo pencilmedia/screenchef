@@ -109,9 +109,9 @@ only screen and (max-width: 480px) and (orientation : portrait) {
   }
   /* Begin Layout */
   main {
+    min-width: $screen-xs-min;
     section {
       article {
-       
       }
     }
   }

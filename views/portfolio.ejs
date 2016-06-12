@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <% include partials/head.ejs %>
+    </head>
+    <body id="portfolio" class="<%= classname %>">
+    <main>
+        <% include partials/nav.ejs %>
+        <section>
+            <article class="card-container">
+                <h1><%= h1 %></h1>
+                <p>Use this document as a way to quickly start any new project. All you get is this text and a mostly barebones HTML document.</p>
+                
+                <h2>Client Work</h2>
+                <img src="/img/logos_clients/logo-paradata.png" class="logo-client" alt="Paradata Inc.">
+
+                <a href="#/" class="card-item">
+                    <span class="card-img">
+                        <img src="/img/logos_clients/logo-paradata.png" alt="Paradata Inc.">
+                    </span>
+                    <span class="card-content">
+                        <h2>User Experience Design</h2>
+                        <p>Paradata is a SaaS delivering verified insights and executable actions to supply chain problems before they occur.</p>
+                    </span>
+                </a>
+                <a href="#/" class="card-item">
+                    <span class="card-img">
+                        <img src="/img/logos_clients/logo-paradata.png" alt="Paradata Inc.">
+                    </span>
+                    <span class="card-content">
+                        <h2>Front End Development</h2>
+                        <p>Paradata is a SaaS delivering verified insights and executable actions to supply chain problems before they occur.</p>
+                    </span>
+                </a>
+                <a href="#/" class="card-item">
+                    <span class="card-img">
+                        <img src="/img/logos_clients/logo-paradata.png" alt="Paradata Inc.">
+                    </span>
+                    <span class="card-content">
+                        <h2>Visual Design</h2>
+                        <p>Paradata is a SaaS delivering verified insights and executable actions to supply chain problems before they occur.</p>
+                    </span>
+                </a>
+                <a href="#/" class="card-item alternate">
+                    <span class="card-content">
+                        <h2>Paradata SaaS Application</h2>
+                        <p>Paradata is a SaaS delivering verified insights and executable actions to supply chain problems before they occur.</p>
+                    </span>
+                    <span class="card-img">
+                        <img src="/img/logos_clients/logo-paradata.png" alt="Paradata Inc.">
+                    </span>
+                </a>
+
+            </article>
+        </section> 
+
+        <% include partials/footer.ejs %>
+    </main> 
+    <% include partials/javascripts.ejs %>
+</body>
+</html>

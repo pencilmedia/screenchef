@@ -11,12 +11,12 @@ router.get('/', function(req, res, next) {
   });
 });
 
-/* GET work. */
-router.get('/work', function(req, res, next) {
-  res.render('work', {
-    title: 'screenchef : Work',
-    h1: 'Work',
-    classname: 'work',
+/* GET portfolio. */
+router.get('/portfolio', function(req, res, next) {
+  res.render('portfolio', {
+    title: 'screenchef : Portfolio',
+    h1: 'Portfolio',
+    classname: 'portfolio',
     companytitle: 'Ralph Adrian Garcia',
     companydescription: 'Interaction Designer and Prototyper'
   });

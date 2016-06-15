@@ -16,7 +16,7 @@ router.get('/portfolio', function(req, res, next) {
   res.render('portfolio', {
     title: 'screenchef : Portfolio',
     h1: 'Portfolio',
-    classname: 'portfolio',
+    classname: 'secondary portfolio',
     companytitle: 'Ralph Adrian Garcia',
     companydescription: 'Interaction Designer and Prototyper'
   });

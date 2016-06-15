@@ -1,94 +1,97 @@
 /* BEGIN: common.scss (global app styles)
 // -----------------------------------------------------*/
 * {
-  box-sizing: border-box;
+     box-sizing: border-box;
 }
 
 /* Highlight Text Color */
 ::selection {
-  color: #fff;
-  background: #f96;    /* Safari */
+     background: #f96;    /* Safari */
+     color: #fff;
 }
 ::-moz-selection {
-  color: #fff;
-  background: #f96;    /* Firefox */
+     background: #f96;    /* Firefox */
+     color: #fff;
 }
 
 /* Global ************* */
-
 html, body {
-  height: 100%;
+     height: 100%;
 }
 body {
-  border-top: 2px solid $schoolbusYellow;
-  background-color: $bodyBackground;
-  margin: 0;
-  padding: 0;
+     background-color: $bodyBackground;
+     border-top: 2px solid $schoolbusYellow;
+     margin: 0;
+     padding: 0;
 }
 p {
-  margin: 0 0 1.25em 0;
-  line-height: 1.5em;
+     line-height: 1.5em;
+     margin: 0 0 1.25em 0;
 }
 a {
-  color: $blueDarkest;
-  text-decoration: none;
+     color: $blueDarkest;
+     text-decoration: none;
+     &:hover {
+          color: $purple;
+          text-decoration: underline;
+     }
+}
 
-  &:hover {
-    color: $purple;
-    text-decoration: underline;
-  }
+/* Helpers ************* */
+.pull-right {
+     float: right;
 }
 
 /* Buttons ************* */
 .button {
-  font-size: .95em;
-  color: #043F90;
-  text-decoration: none;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
-  cursor: pointer;
-  height: 35px;
-  line-height: 35px;
-  margin: auto 3px auto 0;
-  outline-style: none;
-  padding: 7px 0 16px 15px;
-  white-space: nowrap;
-  background: url(../img/btns/btn_left.png) no-repeat left center;
+     background: url(../img/btns/btn_left.png) no-repeat left center;
+     color: #043F90;
+     cursor: pointer;
+     font-size: .95em;
+     height: 35px;
+     line-height: 35px;
+     margin: auto 3px auto 0;
+     outline-style: none;
+     padding: 7px 0 16px 15px;
+     text-decoration: none;
+     text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+     white-space: nowrap;
 
-  span {
-    height: 35px;
-    line-height: 35px;
-    margin: 0;
-    padding: 7px 15px 16px 0;
-    background: url(../img/btns/btn_right.png) no-repeat right center;
-  }
-  em {
-    background-position: left center;
-    background-repeat: no-repeat;
-    font-style: normal;
-    font-weight: normal;
-    margin-right: 0;
-    padding: 3px 6px;
-  }
-  &:hover {
-    text-decoration: none;
-    background: url(../img/btns/btn_left_hvr.png) no-repeat left center;
+     span {
+          background: url(../img/btns/btn_right.png) no-repeat right center;
+          height: 35px;
+          line-height: 35px;
+          margin: 0;
+          padding: 7px 15px 16px 0;
+     }
+     em {
+          background-position: left center;
+          background-repeat: no-repeat;
+          font-style: normal;
+          font-weight: normal;
+          margin-right: 0;
+          padding: 3px 6px;
+     }
+     &:hover {
+          background: url(../img/btns/btn_left_hvr.png) no-repeat left center;
+          text-decoration: none;
 
-    span {
-      background: url(../img/btns/btn_right_hvr.png) no-repeat right center;
-    }
-  }
+          span {
+               background: url(../img/btns/btn_right_hvr.png) no-repeat right center;
+          }
+     }
 }
 .colonnade {
-  .lt-column {
-    float: left;
-    width: 30.3%;
-  }
-  .mid-column {
-    float: left;
-    width: 39.3%;
-  }
-  .rt-column {
-    float: left;
-    width: 30.3%;
-  }
+     .lt-column {
+          float: left;
+          width: 30.3%;
+     }
+     .mid-column {
+          float: left;
+          width: 39.3%;
+     }
+     .rt-column {
+          float: left;
+          width: 30.3%;
+     }
 }

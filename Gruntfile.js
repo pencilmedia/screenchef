@@ -14,7 +14,7 @@ module.exports = function(grunt) {
 				options: {
 					update: true, // Update changes made only
 					noCache: true,
-					sourcemap: 'inline',
+					sourcemap: 'auto',
           			style: 'nested' // we don't want to compress it
 				},
 				files: {

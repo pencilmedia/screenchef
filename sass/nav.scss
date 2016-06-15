@@ -53,3 +53,22 @@ header {
         }
     }
 }
+
+/* BEGIN: Secondary Page Navigation */
+.secondary {
+    header {
+        margin-bottom: 10px;
+        margin-top: 10px;
+        hgroup {
+            h1 {
+                font-size: 115%;
+            }
+            h2 {
+                font-size: 100%;
+                + p {
+                    display: none;
+                }
+            }
+        }
+    }
+}

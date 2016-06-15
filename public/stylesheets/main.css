@@ -108,57 +108,119 @@ main {
               border-radius: 100%; }
         main section article.callout dl:last-child {
           margin-bottom: 0; }
-    main section article.card-container {
-      max-width: 100%;
-      margin-left: auto;
-      margin-right: auto; }
-      main section article.card-container::after {
-        clear: both;
-        content: "";
-        display: table; }
-      main section article.card-container .logo-client {
-        margin-bottom: 1.6em;
-        max-width: 250px; }
-      main section article.card-container .card-item {
-        -moz-transition: all 0.5s ease;
-        -ms-transition: all 0.5s ease;
-        -o-transition: all 0.5s ease;
-        -webkit-transition: all 0.5s ease;
-        transition: all 0.5s ease;
-        background: #f2f2f2;
-        border: 1px solid #fff;
-        box-shadow: 0 0 15px #d9d9d9;
-        display: block;
-        margin-bottom: 1.6em;
-        outline: 1px solid #d9d9d9;
-        overflow: auto; }
-        main section article.card-container .card-item:hover {
-          background: #e6e6e6;
-          box-shadow: 0 0 25px #a6a6a6;
-          color: #000;
-          text-decoration: none; }
-        main section article.card-container .card-item .card-img {
-          float: left;
-          display: block;
-          margin-right: 2.3576515979%;
-          width: 31.7615656014%; }
-          main section article.card-container .card-item .card-img:last-child {
-            margin-right: 0; }
-          main section article.card-container .card-item .card-img img {
-            margin: 15px 0 0 10px;
-            max-width: 200px; }
-        main section article.card-container .card-item .card-content {
-          float: left;
-          display: block;
-          margin-right: 2.3576515979%;
-          width: 65.8807828007%;
-          padding: 15px 20px 15px 0; }
-          main section article.card-container .card-item .card-content:last-child {
-            margin-right: 0; }
-          main section article.card-container .card-item .card-content > p {
-            color: #595959; }
-            main section article.card-container .card-item .card-content > p:last-child {
-              margin-bottom: 0; }
+
+.portfolio section > h1 {
+  margin-bottom: 10px;
+  margin-top: 40px; }
+
+.portfolio section article.client-summary {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 1px dashed #dedede;
+  border-top: 1px dashed #FEC200;
+  margin-bottom: 1.6em;
+  padding-top: 1.6em; }
+  .portfolio section article.client-summary::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .portfolio section article.client-summary .client-brand {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 31.7615656014%; }
+    .portfolio section article.client-summary .client-brand:last-child {
+      margin-right: 0; }
+    .portfolio section article.client-summary .client-brand > img {
+      margin-bottom: 1.6em;
+      max-width: 250px; }
+  .portfolio section article.client-summary .client-description {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 65.8807828007%; }
+    .portfolio section article.client-summary .client-description:last-child {
+      margin-right: 0; }
+    .portfolio section article.client-summary .client-description h2 {
+      display: inline-block; }
+
+.portfolio section article.card-container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .portfolio section article.card-container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .portfolio section article.card-container .card-item {
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: #f2f2f2;
+    border: 1px solid #fff;
+    box-shadow: 0 0 15px #d9d9d9;
+    display: block;
+    margin-bottom: 1.6em;
+    outline: 1px solid #d9d9d9;
+    overflow: auto; }
+    .portfolio section article.card-container .card-item:hover {
+      background: #e6e6e6;
+      box-shadow: 0 0 25px #a6a6a6;
+      color: #000;
+      text-decoration: none; }
+    .portfolio section article.card-container .card-item .card-left, .portfolio section article.card-container .card-item .card-right {
+      min-height: 100px; }
+      .portfolio section article.card-container .card-item .card-left h3, .portfolio section article.card-container .card-item .card-right h3 {
+        visibility: hidden; }
+      .portfolio section article.card-container .card-item .card-left > p, .portfolio section article.card-container .card-item .card-right > p {
+        color: #595959; }
+        .portfolio section article.card-container .card-item .card-left > p:last-child, .portfolio section article.card-container .card-item .card-right > p:last-child {
+          margin-bottom: 0; }
+    .portfolio section article.card-container .card-item .card-left {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 31.7615656014%;
+      outline: 1px solid #dedede;
+      border: 1px solid #fff; }
+      .portfolio section article.card-container .card-item .card-left:last-child {
+        margin-right: 0; }
+    .portfolio section article.card-container .card-item .card-right {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 65.8807828007%;
+      padding: 10px 1.6em 10px 1.6em; }
+      .portfolio section article.card-container .card-item .card-right:last-child {
+        margin-right: 0; }
+    .portfolio section article.card-container .card-item:nth-child(even) .card-left {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 65.8807828007%;
+      padding: 10px 1.6em 10px 1.6em; }
+      .portfolio section article.card-container .card-item:nth-child(even) .card-left:last-child {
+        margin-right: 0; }
+    .portfolio section article.card-container .card-item:nth-child(even) .card-right {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 31.7615656014%;
+      padding: 0; }
+      .portfolio section article.card-container .card-item:nth-child(even) .card-right:last-child {
+        margin-right: 0; }
+    .portfolio section article.card-container .card-item.ixd .card-left {
+      background: url("/img/graphic-ixd.jpg") no-repeat center center;
+      background-size: 100%; }
+    .portfolio section article.card-container .card-item.front-end .card-right {
+      background: url("/img/graphic-fee.jpg") no-repeat center center;
+      background-size: 100%; }
+    .portfolio section article.card-container .card-item.visual-design .card-left {
+      background: url("/img/graphic-vd.jpg") no-repeat center center;
+      background-size: 100%; }
 
 /* BEGIN: typography.scss
 // -----------------------------------------------------*/
@@ -258,28 +320,28 @@ h6 {
 
 /* Highlight Text Color */
 ::selection {
-  color: #fff;
   background: #f96;
-  /* Safari */ }
+  /* Safari */
+  color: #fff; }
 
 ::-moz-selection {
-  color: #fff;
   background: #f96;
-  /* Firefox */ }
+  /* Firefox */
+  color: #fff; }
 
 /* Global ************* */
 html, body {
   height: 100%; }
 
 body {
-  border-top: 2px solid #FEC200;
   background-color: #f9f9f9;
+  border-top: 2px solid #FEC200;
   margin: 0;
   padding: 0; }
 
 p {
-  margin: 0 0 1.25em 0;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  margin: 0 0 1.25em 0; }
 
 a {
   color: #032e68;
@@ -288,26 +350,30 @@ a {
     color: #986FB1;
     text-decoration: underline; }
 
+/* Helpers ************* */
+.pull-right {
+  float: right; }
+
 /* Buttons ************* */
 .button {
-  font-size: .95em;
+  background: url(../img/btns/btn_left.png) no-repeat left center;
   color: #043F90;
-  text-decoration: none;
-  text-shadow: 0 1px 0 white;
   cursor: pointer;
+  font-size: .95em;
   height: 35px;
   line-height: 35px;
   margin: auto 3px auto 0;
   outline-style: none;
   padding: 7px 0 16px 15px;
-  white-space: nowrap;
-  background: url(../img/btns/btn_left.png) no-repeat left center; }
+  text-decoration: none;
+  text-shadow: 0 1px 0 white;
+  white-space: nowrap; }
   .button span {
+    background: url(../img/btns/btn_right.png) no-repeat right center;
     height: 35px;
     line-height: 35px;
     margin: 0;
-    padding: 7px 15px 16px 0;
-    background: url(../img/btns/btn_right.png) no-repeat right center; }
+    padding: 7px 15px 16px 0; }
   .button em {
     background-position: left center;
     background-repeat: no-repeat;
@@ -316,8 +382,8 @@ a {
     margin-right: 0;
     padding: 3px 6px; }
   .button:hover {
-    text-decoration: none;
-    background: url(../img/btns/btn_left_hvr.png) no-repeat left center; }
+    background: url(../img/btns/btn_left_hvr.png) no-repeat left center;
+    text-decoration: none; }
     .button:hover span {
       background: url(../img/btns/btn_right_hvr.png) no-repeat right center; }
 
@@ -369,6 +435,17 @@ header {
           content: "•"; }
         header nav > ul li:last-child:after {
           content: ""; }
+
+/* BEGIN: Secondary Page Navigation */
+.secondary header {
+  margin-bottom: 10px;
+  margin-top: 10px; }
+  .secondary header hgroup h1 {
+    font-size: 115%; }
+  .secondary header hgroup h2 {
+    font-size: 100%; }
+    .secondary header hgroup h2 + p {
+      display: none; }
 
 /* BEGIN: buttons.scss
 // -----------------------------------------------------*/

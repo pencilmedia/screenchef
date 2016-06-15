@@ -103,15 +103,41 @@ main {
                          }
                     }
                }
+          }
+     }
+}
+// BEGIN: Portfolio
+.portfolio {
+     section {
+          > h1 {
+               margin-bottom: 10px;
+               margin-top: 40px;
+          }
+          article {
+               &.client-summary {
+                    @include outer-container(100%);
+                    border-bottom: 1px dashed $borderColor;
+                    border-top: 1px dashed $schoolbusYellow;
+                    margin-bottom: $pageMargin;
+                    padding-top: $pageMargin;
+                    .client-brand {
+                         @include span-columns(4);
+                         > img {
+                              margin-bottom: $pageMargin;
+                              max-width: 250px;
+                         }
+                    }
+                    .client-description {
+                         @include span-columns(8);
+                         h2 {
+                             display: inline-block;
+                         }
+                    }
+               }
                &.card-container {
                     @include outer-container(100%);
-                    // Portfolio
-                    .logo-client {
-                         margin-bottom: $pageMargin;
-                         max-width: 250px;
-                    }
                     .card-item {
-                             @include transition(all .5s);
+                         @include transition(all .5s);
                          background: $grayLightest;
                          border: 1px solid $white;
                          box-shadow: 0 0 15px $grayLight;
@@ -125,22 +151,54 @@ main {
                              color: $black;
                              text-decoration: none;
                          }
-                         .card-img {
-                              @include span-columns(4);
-                              img {
-                                   margin: 15px 0 0 10px;
-                                   max-width: 200px;
+                         .card-left, .card-right {
+                              min-height: 100px;
+                              h3 {
+                                   visibility: hidden;
                               }
-                         }
-                         .card-content {
-                              @include span-columns(8);
                               > p {
                                    color: $grayDarkest;
                                    &:last-child {
                                         margin-bottom: 0;
                                    }
                               }
-                              @include pad(15px 20px 15px 0);
+                         }
+                         .card-left {
+                              @include span-columns(4);
+                              outline: 1px solid $borderColor;
+                              border: 1px solid $white;
+                         }
+                         .card-right {
+                              @include span-columns(8);
+                              @include pad(10px $pageMargin 10px $pageMargin);
+                         }
+                         &:nth-child(even) {
+                              .card-left {
+                                   @include span-columns(8);
+                                   @include pad(10px $pageMargin 10px $pageMargin);
+                              }
+                              .card-right {
+                                   @include span-columns(4);
+                                   @include pad(0);
+                              }
+                         }
+                         &.ixd {
+                              .card-left {
+                                   background: url("/img/graphic-ixd.jpg") no-repeat center center;
+                                   background-size: 100%;
+                              }
+                         }
+                         &.front-end {
+                              .card-right {
+                                   background: url("/img/graphic-fee.jpg") no-repeat center center;
+                                   background-size: 100%;
+                              }
+                         }
+                         &.visual-design {
+                              .card-left {
+                                   background: url("/img/graphic-vd.jpg") no-repeat center center;
+                                   background-size: 100%;
+                              }
                          }
                     }
                }

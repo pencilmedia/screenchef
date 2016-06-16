@@ -142,7 +142,7 @@ main {
     width: 65.8807828007%; }
     .portfolio section article.client-summary .client-description:last-child {
       margin-right: 0; }
-    .portfolio section article.client-summary .client-description h2 {
+    .portfolio section article.client-summary .client-description h3 {
       display: inline-block; }
 
 .portfolio section article.card-container {
@@ -173,7 +173,7 @@ main {
       text-decoration: none; }
     .portfolio section article.card-container .card-item .card-left, .portfolio section article.card-container .card-item .card-right {
       min-height: 100px; }
-      .portfolio section article.card-container .card-item .card-left h3, .portfolio section article.card-container .card-item .card-right h3 {
+      .portfolio section article.card-container .card-item .card-left h6, .portfolio section article.card-container .card-item .card-right h6 {
         visibility: hidden; }
       .portfolio section article.card-container .card-item .card-left > p, .portfolio section article.card-container .card-item .card-right > p {
         color: #595959; }
